@@ -16,12 +16,12 @@ echo "Downloading custom content and models..."
 wget $ZIP_DOWNLOAD_LINK -O $ZIP_DOWNLOAD_NAME
 
 # Check if the extraction directory exists, create it if necessary
-echo Checking if $EXTRACTION_LOCATION exists..."
+echo "Checking if $EXTRACTION_LOCATION exists..."
 if [ ! -d "$EXTRACTION_LOCATION" ]; then
   echo "Creating directory: $EXTRACTION_LOCATION"
   mkdir -p "$EXTRACTION_LOCATION"
 else
-  echo "$EXTRACTIONLOCATION already exists, skipping...
+  echo "$EXTRACTION_LOCATION already exists, skipping..."
 fi
 
 # Create a temporary directory for extraction
