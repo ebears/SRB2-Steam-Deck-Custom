@@ -4,6 +4,7 @@
 FLATPAK_APP_NAME="io.github.srb2.rphys"
 ZIP_DOWNLOAD_LINK="https://github.com/ebears/SRB2-Steam-Deck-Custom/raw/main/SRB2-XZPY-V1.3-SD.zip"
 ZIP_DOWNLOAD_NAME="SRB2-XZPY-V1.3-SD.zip"
+ZIP_FOLDER_NAME="SRB2-XZPY-V1.3-SD”
 EXTRACTION_LOCATION="$HOME/.var/app/io.github.srb2.rphys/.srb2"
 
 # Install the Flatpak application
@@ -28,7 +29,7 @@ echo "Extracting to temporary directory: $temp_dir"
 unzip -o $ZIP_DOWNLOAD_NAME -d $temp_dir
 
 # Move the contents to the desired location
-mv $temp_dir/* $EXTRACTION_LOCATION
+mv - f $temp_dir/$ZIP_FOLDER_NAME/* $EXTRACTION_LOCATION
 
 # Clean up the temporary directory
 rm -r $temp_dir
