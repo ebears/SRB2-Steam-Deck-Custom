@@ -32,7 +32,7 @@ unzip -o $ZIP_DOWNLOAD_NAME -d $temp_dir
 mv -f $temp_dir/$ZIP_FOLDER_NAME/* $EXTRACTION_LOCATION
 
 # Clean up the temporary directory
-rm -r $temp_dir
+rm -r $temp_dir/$ZIP_FOLDER_NAME
 
 # Clean up the downloaded zip file
 echo "Cleaning up..."
