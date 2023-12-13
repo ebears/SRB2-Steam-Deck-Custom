@@ -8,7 +8,7 @@ EXTRACTION_LOCATION="$HOME/.var/app/io.github.srb2.rphys/.srb2"
 
 # Install the Flatpak application
 echo "Installing $FLATPAK_APP_NAME via Flatpak..."
-flatpak install $FLATPAK_APP_NAME -y
+flatpak install $FLATPAK_APP_NAME -y --noninteractive
 
 # Download the zip file
 echo "Downloading server custom content and models..."
