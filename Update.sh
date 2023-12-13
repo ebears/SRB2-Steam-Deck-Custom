@@ -20,9 +20,18 @@ if [ ! -d "$EXTRACTION_LOCATION" ]; then
   mkdir -p "$EXTRACTION_LOCATION"
 fi
 
-# Extract the zip file to the desired location
-echo "Extracting to $EXTRACTION_LOCATION..."
-unzip -o $ZIP_DOWNLOAD_NAME -d "$EXTRACTION_LOCATION/$(basename -s .zip $ZIP_DOWNLOAD_NAME)"
+# Create a temporary directory for extraction
+temp_dir=$(mktemp -d)
+
+# Extract the zip file to the temporary directory
+echo "Extracting to temporary directory: $temp_dir"
+unzip -o $ZIP_DOWNLOAD_NAME -d $temp_dir
+
+# Move the contents to the desired location
+mv $temp_dir/* $EXTRACTION_LOCATION
+
+# Clean up the temporary directory
+rm -r $temp_dir
 
 # Clean up the downloaded zip file
 echo "Cleaning up..."
