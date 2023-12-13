@@ -22,7 +22,7 @@ fi
 
 # Extract the zip file to the desired location
 echo "Extracting to $EXTRACTION_LOCATION..."
-unzip $ZIP_DOWNLOAD_NAME -d $EXTRACTION_LOCATION
+unzip -o $ZIP_DOWNLOAD_NAME -d $EXTRACTION_LOCATION
 
 # Clean up the downloaded zip file
 echo "Cleaning up..."
