@@ -14,6 +14,12 @@ flatpak install --user $FLATPAK_APP_NAME -y --noninteractive
 echo "Downloading server custom content and models..."
 wget $ZIP_DOWNLOAD_LINK -O $ZIP_DOWNLOAD_NAME
 
+# Check if the extraction directory exists, and create it if necessary
+if [ ! -d "$EXTRACTION_LOCATION" ]; then
+  echo "Creating directory: $EXTRACTION_LOCATION"
+  mkdir -p "$EXTRACTION_LOCATION"
+fi
+
 # Extract the zip file to the desired location
 echo "Extracting to $EXTRACTION_LOCATION..."
 unzip $ZIP_DOWNLOAD_NAME -d $EXTRACTION_LOCATION
