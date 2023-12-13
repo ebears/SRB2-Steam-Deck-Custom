@@ -2,7 +2,7 @@
 
 # placeholders
 FLATPAK_APP_NAME="io.github.srb2.rphys"
-ZIP_DOWNLOAD_LINK="your_direct_link_to_zip_file"
+ZIP_DOWNLOAD_LINK="https://github.com/ebears/SRB2-Steam-Deck-Custom/raw/main/SRB2-XZPY-V1.3-SD.zip"
 ZIP_DOWNLOAD_NAME="SRB2-XZPY-V1.3-SD.zip"
 EXTRACTION_LOCATION="$HOME/.var/app/io.github.srb2.rphys/.srb2"
 
