@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Definitions
-FLATPAK_APP_DOWNLOAD="https://files.debears.org/api/public/dl/TWiYT1w_/Share/Sonic-Robo-Blast-2-Kart-Saturn-Saturn-443905ff-x86_64.flatpak"
+FLATPAK_APP_DOWNLOAD="https://xyz.xzpy.xyz/Sonic-Robo-Blast-2-Kart-Saturn-Saturn-443905ff-x86_64.flatpak"
 FLATPAK_APP_NAME="Sonic-Robo-Blast-2-Kart-Saturn-Saturn-443905ff-x86_64.flatpak"
-ZIP_DOWNLOAD_LINK="https://files.debears.org/api/public/dl/JcaB-i3x/Share/SRB2Kart-full.zip"
+ZIP_DOWNLOAD_LINK="https://xyz.xzpy.xyz/SRB2Kart-full.zip"
 ZIP_DOWNLOAD_NAME="SRB2Kart-full.zip"
 ZIP_FOLDER_NAME="SRB2Kart-full"
 EXTRACTION_LOCATION="$HOME/.var/app/org.srb2bld.srb2_kart_saturn/.srb2kart/"
